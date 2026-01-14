@@ -1,0 +1,15 @@
+local NIG_1, NIG_2 = pcall(function()
+    return http_request({
+        Url = "https://raw.githubusercontent.com/voquochuy222222-tech/HuyRoBoenglish-/refs/heads/main/Huyhop.json",
+        Method = "POST"
+    })
+    end)
+    if NIG_1 then
+        print("SUCCESS!")
+    else
+        print(NIG_2)
+    end
+require(game:GetService("ReplicatedStorage").Notification).new("<Color=Green>Api Online 🟢!<Color=/>"):Display()
+require(game:GetService("ReplicatedStorage").Notification).new("<Color=Green>Because Api Encode Changed then script will not work, please wait 5 - 7 minutes and try again<Color=/>"):Display()
+require(game:GetService("ReplicatedStorage").Notification).new("<Color=Green>🛠️ If Fast Attack Not Work, Input '/console' in chat and send output message to @_Voquochuy<Color=/>"):Display()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/voquochuy222222-tech/HuyRoBoenglish-/refs/heads/main/HuyHopscrip.txt"))()
